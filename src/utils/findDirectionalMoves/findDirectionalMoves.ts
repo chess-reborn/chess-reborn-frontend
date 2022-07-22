@@ -21,7 +21,9 @@ const findDirectionalMoves = (currentPiece: Piece, pieces: Piece[], direction: P
       return true
     }
     
-    moves.push(move)
+    if (!foundPiece) {
+      moves.push(move)
+    }
   })
 
   return moves
