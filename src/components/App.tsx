@@ -1,12 +1,16 @@
-import React, { useState } from "react"
+import React from "react"
 
-const App = () => {
+import { Provider } from "react-redux"
 
-  return (
-    <div>
-      APP
-    </div>
-  )
-}
+import store from "redux/store"
+
+import Board from "components/Board"
+
+
+const App = () => (
+  <Provider store={store}>
+    <Board />
+  </Provider>
+)
 
 export default App
