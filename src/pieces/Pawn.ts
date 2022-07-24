@@ -1,8 +1,8 @@
-import Team from "types/Team"
-import Piece from "types/Piece"
-
 import WhitePawn from "assets/WhitePawn.png"
 import BlackPawn from "assets/BlackPawn.png"
+
+import Piece from "types/Piece"
+import Team from "types/Team"
 
 export default class Pawn implements Piece {
   public x

@@ -1,7 +1,6 @@
 import WhiteQueen from "assets/WhiteQueen.png"
 import BlackQueen from "assets/BlackQueen.png"
 
-import filterMoves from "utils/filterMoves"
 import findDirectionalMoves from "utils/findDirectionalMoves"
 
 import Piece from "types/Piece"
