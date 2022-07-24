@@ -37,10 +37,10 @@ export default class Queen implements Piece {
     { x: 1, y: 1 },
   ]
 
-  public getPossibleMoves = (pieces: Piece[]): Position[] => filterMoves(
-    this.moves.reduce((result, move) => ([
+  public getPossibleMoves = (pieces: Piece[]): Position[] => this.moves.reduce(
+    (result, move) => ([
       ...result,
       ...findDirectionalMoves(this, pieces, move)
-    ]), [] as Position[])
+    ]), [] as Position[],
   )
 }

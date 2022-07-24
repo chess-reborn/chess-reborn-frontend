@@ -1,7 +1,6 @@
 import WhiteRook from "assets/WhiteRook.png"
 import BlackRook from "assets/BlackRook.png"
 
-import filterMoves from "utils/filterMoves"
 import findDirectionalMoves from "utils/findDirectionalMoves"
 
 import Piece from "types/Piece"
@@ -33,10 +32,10 @@ export default class Rook implements Piece {
     { x: 1, y: 0 },
   ]
 
-  public getPossibleMoves = (pieces: Piece[]): Position[] => filterMoves(
-    this.moves.reduce((result, move) => ([
+  public getPossibleMoves = (pieces: Piece[]): Position[] => this.moves.reduce(
+    (result, move) => ([
       ...result,
       ...findDirectionalMoves(this, pieces, move)
-    ]), [] as Position[])
+    ]), [] as Position[],
   )
 }

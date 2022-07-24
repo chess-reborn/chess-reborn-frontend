@@ -16,8 +16,6 @@ const Board = () => {
     init()
   }, [])
 
-  // console.log(pieces)
-
   return (
     <div>
       BOARD

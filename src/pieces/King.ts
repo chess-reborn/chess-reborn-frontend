@@ -2,11 +2,11 @@ import WhiteKing from "assets/WhiteKing.png"
 import BlackKing from "assets/BlackKing.png"
 
 import filterMoves from "utils/filterMoves"
+import findPieceAtPosition from "utils/findPieceAtPosition"
 
 import Piece from "types/Piece"
 import Position from "types/Position"
 import Team from "types/Team"
-import findPieceAtPosition from "utils/findPieceAtPosition"
 
 export default class King implements Piece {
   public x
