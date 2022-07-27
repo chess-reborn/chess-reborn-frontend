@@ -33,8 +33,12 @@ export default class Elephant implements Piece {
   ]
   
   public getPossibleMoves = (pieces: Piece[]) => filterMoves(
-    this.moves.filter((move) => {
-      const piece = findPieceAtPosition(pieces, this.x + move.x, this.y + move.y)
+    this.moves.filter(({ x, y }) => {
+      const move = {
+        x: this.x + x,
+        y: this.y + y,
+      }
+      const piece = findPieceAtPosition(pieces, move)
       return !piece || piece.team !== this.team
     })
   )

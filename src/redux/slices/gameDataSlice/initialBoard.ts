@@ -1,11 +1,11 @@
 import range from "utils/range"
 
-import Pawn from "pieces/Pawn"
-import Rook from "pieces/Rook"
-import King from "pieces/King"
-import Knight from "pieces/Knight"
-import Bishop from "pieces/Bishop"
-import Queen from "pieces/Queen"
+import Pawn from "pieces/classique/Pawn"
+import Rook from "pieces/classique/Rook"
+import King from "pieces/classique/King"
+import Knight from "pieces/classique/Knight"
+import Bishop from "pieces/classique/Bishop"
+import Queen from "pieces/classique/Queen"
 
 const initialBoard = [
   new Rook(0, 0, "black"),

@@ -13,7 +13,7 @@ const findDirectionalMoves = (currentPiece: Piece, pieces: Piece[], direction: P
       x: currentPiece.x + direction.x * step,
       y: currentPiece.y + direction.y * step,
     }
-    const foundPiece = findPieceAtPosition(pieces, move.x, move.y)
+    const foundPiece = findPieceAtPosition(pieces, move)
 
     if (foundPiece) {
       if (foundPiece.team !== currentPiece.team) {

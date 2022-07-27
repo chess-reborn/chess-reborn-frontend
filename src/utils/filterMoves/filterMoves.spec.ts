@@ -19,5 +19,5 @@ test("checks if moves are filtered correctly", () => {
     { x: 0, y: 1 },
     { x: 7, y: 0 },
     { x: 1, y: 1 },
-  ]);
-});
+  ])
+})

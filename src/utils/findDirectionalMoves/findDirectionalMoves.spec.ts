@@ -1,7 +1,7 @@
 import Piece from "types/Piece"
 import Position from "types/Position"
 
-import Pawn from "pieces/Pawn"
+import Pawn from "pieces/classique/Pawn"
 
 import findDirectionalMoves from "./findDirectionalMoves"
 
@@ -13,8 +13,8 @@ type TestDirectionalMoves = (
 ) => void
 
 const testDirectionalMoves: TestDirectionalMoves = (piece, direction, setup = [], expectation = []) => {
-  const result = findDirectionalMoves(piece, setup, direction);
-  expect(result).toMatchObject(expectation);
+  const result = findDirectionalMoves(piece, setup, direction)
+  expect(result).toMatchObject(expectation)
 }
 
 test("checks if stops on teammate", () => {
@@ -24,7 +24,7 @@ test("checks if stops on teammate", () => {
     [ new Pawn(1, 1, "black") ],
     [],
   )
-});
+})
 
 test("checks if stops after enemy", () => {
   testDirectionalMoves(
@@ -33,7 +33,7 @@ test("checks if stops after enemy", () => {
     [ new Pawn(1, 1, "white") ],
     [{ x: 1, y: 1 }],
   )
-});
+})
 
 test("checks if goes to end", () => {
   testDirectionalMoves(
@@ -41,5 +41,5 @@ test("checks if goes to end", () => {
     { x: -1, y: 2 },
     [],
     [{ x: 4, y: 3 }, { x: 3, y: 5 }, { x: 2, y: 7 }],
-  );
-});
+  )
+})
