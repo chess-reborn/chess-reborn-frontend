@@ -7,8 +7,9 @@ const Cell = ({
   color,
   isSelected,
   pieceImage,
+  onClick,
 }: CellProps) => (
-  <CellBackground isSelected={isSelected} color={color}>
+  <CellBackground isSelected={isSelected} color={color} onClick={onClick}>
     {pieceImage ? <CellImage src={pieceImage} /> : null}
   </CellBackground>
 )
