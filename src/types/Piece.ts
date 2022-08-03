@@ -3,7 +3,6 @@ import Team from "types/Team"
 
 interface Piece extends Position {
   team: Team
-  image: string
   getPossibleMoves: (pieces: Piece[]) => Position[]
 }
 
