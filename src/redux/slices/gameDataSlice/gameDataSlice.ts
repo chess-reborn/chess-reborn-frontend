@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 import Piece from "types/Piece"
 import Team from "types/Team"
+
 import initialBoard from "./initialBoard"
 
 const gameDataSlice = createSlice({

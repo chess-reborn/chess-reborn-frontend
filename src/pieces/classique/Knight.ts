@@ -1,5 +1,5 @@
 import filterMoves from "utils/filterMoves"
-import findPieceAtPosition from "utils/findPieceAtPosition"
+import findPosition from "utils/findPosition"
 
 import Base from "pieces/Base"
 
@@ -23,7 +23,7 @@ class Knight extends Base implements Piece {
       x: this.x + offset.x,
       y: this.y + offset.y,
     }
-    const piece = findPieceAtPosition(pieces, move)
+    const piece = findPosition(pieces, move)
     if (piece) {
       return piece.team !== this.team && move
     }

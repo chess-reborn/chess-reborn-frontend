@@ -1,5 +1,5 @@
 import filterMoves from "utils/filterMoves"
-import findPieceAtPosition from "utils/findPieceAtPosition"
+import findPosition from "utils/findPosition"
 
 import Base from "pieces/Base"
 
@@ -17,7 +17,7 @@ class King extends Base implements Piece {
           x: this.x + i,
           y: this.y + j,
         }
-        const piece = findPieceAtPosition(pieces, move)
+        const piece = findPosition(pieces, move)
         if (!piece || this.team !== piece.team) {
           moves.push(move)
         }

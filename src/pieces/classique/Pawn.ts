@@ -1,4 +1,4 @@
-import findPieceAtPosition from "utils/findPieceAtPosition"
+import findPosition from "utils/findPosition"
 import isEnemyAtPosition from "utils/isEnemyAtPosition"
 
 import Base from "pieces/Base"
@@ -35,7 +35,7 @@ class Pawn extends Base implements Piece {
       x: this.x,
       y: this.y + direction
     }
-    if (findPieceAtPosition(pieces, nextCell) || isEnemyAtPosition(pieces, this.team, nextCell)) {
+    if (findPosition(pieces, nextCell) || isEnemyAtPosition(pieces, this.team, nextCell)) {
       moves.push(nextCell)
     }
   
@@ -44,7 +44,7 @@ class Pawn extends Base implements Piece {
         x: this.x,
         y: this.y + direction * 2,
       }
-      if (findPieceAtPosition(pieces, secondCell) || isEnemyAtPosition(pieces, this.team, secondCell)) {
+      if (findPosition(pieces, secondCell) || isEnemyAtPosition(pieces, this.team, secondCell)) {
         moves.push(nextCell)
       }
     }

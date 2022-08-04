@@ -1,5 +1,5 @@
 import filterMoves from "utils/filterMoves"
-import findPieceAtPosition from "utils/findPieceAtPosition"
+import findPosition from "utils/findPosition"
 
 import Base from "pieces/Base"
 
@@ -19,7 +19,7 @@ class Elephant extends Base implements Piece {
         x: this.x + x,
         y: this.y + y,
       }
-      const piece = findPieceAtPosition(pieces, move)
+      const piece = findPosition(pieces, move)
       return !piece || piece.team !== this.team
     })
   )
