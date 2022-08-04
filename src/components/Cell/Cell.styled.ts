@@ -9,9 +9,10 @@ type CellBackgroundProps = {
 
 export const CellBackground = styled.div<CellBackgroundProps>`
   box-sizing: border-box;
-  width: 100px;
-  height: 100px;
   padding: 10px;
+
+  min-height: 100px;
+
   background-color: ${({ color }) => color};
   ${({ isSelected }) => isSelected && "box-shadow: inset 0px 0px 4px 8px #03C04A;"}
 `
