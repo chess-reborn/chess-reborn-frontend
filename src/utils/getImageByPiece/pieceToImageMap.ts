@@ -1,16 +1,16 @@
-import WhiteBishop from "assets/WhiteBishop.png"
-import WhiteKing from "assets/WhiteKing.png"
-import WhiteKnight from "assets/WhiteKnight.png"
-import WhitePawn from "assets/WhitePawn.png"
-import WhiteQueen from "assets/WhiteQueen.png"
-import WhiteRook from "assets/WhiteRook.png"
+import WhiteBishop from "assets/classique/WhiteBishop.png"
+import WhiteKing from "assets/classique/WhiteKing.png"
+import WhiteKnight from "assets/classique/WhiteKnight.png"
+import WhitePawn from "assets/classique/WhitePawn.png"
+import WhiteQueen from "assets/classique/WhiteQueen.png"
+import WhiteRook from "assets/classique/WhiteRook.png"
 
-import BlackBishop from "assets/BlackBishop.png"
-import BlackKing from "assets/BlackKing.png"
-import BlackKnight from "assets/BlackKnight.png"
-import BlackPawn from "assets/BlackPawn.png"
-import BlackQueen from "assets/BlackQueen.png"
-import BlackRook from "assets/BlackRook.png"
+import BlackBishop from "assets/classique/BlackBishop.png"
+import BlackKing from "assets/classique/BlackKing.png"
+import BlackKnight from "assets/classique/BlackKnight.png"
+import BlackPawn from "assets/classique/BlackPawn.png"
+import BlackQueen from "assets/classique/BlackQueen.png"
+import BlackRook from "assets/classique/BlackRook.png"
 
 const pieceToImageMap = {
   Bishop: { white: WhiteBishop, black: BlackBishop },

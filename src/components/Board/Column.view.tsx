@@ -1,5 +1,4 @@
-import React from "react"
-
+import { ReactElement, Key } from "react"
 import range from "utils/range"
 
 import { BoardIdentifier } from "./Board.styled"
@@ -7,7 +6,7 @@ import { BoardIdentifier } from "./Board.styled"
 const A_BYTE_REPRESENTATION = "A".charCodeAt(0)
 
 type LineOfIdentifiersProps = {
-  keyName: React.Key
+  keyName: Key
 }
 
 const LineOfIdentifiers = ({ keyName }: LineOfIdentifiersProps) => (
@@ -25,7 +24,7 @@ const LineOfIdentifiers = ({ keyName }: LineOfIdentifiersProps) => (
 )
 
 type ColumnProps = {
-  children: React.ReactElement[]
+  children: ReactElement[]
 }
 
 const Column = ({ children }: ColumnProps) => (

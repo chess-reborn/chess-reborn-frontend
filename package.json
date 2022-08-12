@@ -8,6 +8,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
     "react-redux-actions-hook": "^1.1.18",
+    "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

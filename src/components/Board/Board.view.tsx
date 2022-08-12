@@ -1,12 +1,8 @@
-import React from "react"
-
 import range from "utils/range"
 import findPosition from "utils/findPosition"
 import getImageByPiece from "utils/getImageByPiece"
-
 import Piece from "types/Piece"
 import Position from "types/Position"
-
 import Cell from "components/Cell"
 
 import Row from "./Row.view"

@@ -1,15 +1,10 @@
-import React from "react"
-
-import { Provider } from "react-redux"
-
-import store from "redux/store"
-
+import Layout from "components/Layout"
 import Board from "components/Board"
 
 const App = () => (
-  <Provider store={store}>
+  <Layout>
     <Board />
-  </Provider>
+  </Layout>
 )
 
 export default App

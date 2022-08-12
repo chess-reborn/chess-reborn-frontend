@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useActions } from "react-redux-actions-hook"
-
 import * as actions from "redux/slices/gameDataSlice"
-
 import useGameState from "hooks/useGameState"
-
 import Piece from "types/Piece"
 import Position from "types/Position"
 
 import BoardView from "./Board.view"
 import findPosition from "utils/findPosition"
 
-const Board = () => {
+const BoardLogic = () => {
   const [selectedPiece, setSelectedPiece] = useState<Piece>()
   const { pieces, currentTeam } = useGameState()
   const { init } = useActions(actions)
@@ -63,4 +60,4 @@ const Board = () => {
   )
 }
 
-export default Board
+export default BoardLogic

@@ -1,10 +1,10 @@
-import React from "react"
+import { ReactElement } from "react"
 
 import { BoardIdentifier } from "./Board.styled"
 
 type RowProps = {
   row: number
-  children: React.ReactElement[]
+  children: ReactElement[]
 }
 
 const Row = ({ row, children }: RowProps) => (

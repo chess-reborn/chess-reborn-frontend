@@ -6,7 +6,7 @@ import Team from "types/Team"
 import initialBoard from "./initialBoard"
 
 const gameDataSlice = createSlice({
-  name: "expression",
+  name: "gameData",
   
   initialState: {
     pieces: [] as Piece[],
